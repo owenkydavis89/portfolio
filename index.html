@@ -1,78 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background-color: #0f172a;
+    }
+
+    body {
+      background: #0f172a;
       color: white;
     }
 
     header {
-      background: #1e293b;
+      background: #020617;
       padding: 20px;
       text-align: center;
-      font-size: 24px;
+    }
+
+    header h1 {
+      color: #00bcd4;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+
+    .hero span {
+      color: #00bcd4;
     }
 
     section {
-      padding: 40px;
-      text-align: center;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    h1 {
-      color: #38bdf8;
+    h2 {
+      margin-bottom: 20px;
+      color: #00bcd4;
     }
 
-    .card {
+    .skills ul {
+      list-style: none;
+    }
+
+    .skills li {
       background: #1e293b;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
       padding: 20px;
-      margin: 20px auto;
-      width: 300px;
-      border-radius: 10px;
+      background: #020617;
+      margin-top: 40px;
     }
 
     button {
       padding: 10px 20px;
-      background: #38bdf8;
+      background: #00bcd4;
       border: none;
-      border-radius: 5px;
+      color: black;
       cursor: pointer;
+      border-radius: 5px;
+      margin-top: 15px;
     }
+
+    button:hover {
+      background: #0097a7;
+     .project {
+  background: #1e293b;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+     }
+
+.project h3 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+ 
+    }
+
   </style>
 </head>
+
 <body>
 
   <header>
-    👨🏽‍💻 My Portfolio
+    <h1>Owen Davis/Web Developer</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h1>Hi, I’m Owen 👊🏿</h1>
-    <p>I’m learning coding and becoming a developer.</p>
+  <div class="hero">
+    <h2>Hi, I'm <span>Owen</span></h2>
+    <p>I build websites & trade Forex</p>
+    <button>Contact Me</button>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a beginner web developer and Forex trader based in Nairobi.
+      I'm passionate about building clean websites and growing financially through trading.
+    </p>
   </section>
 
-  <section>
-    <h1>My Skills</h1>
-    <div class="card">HTML</div>
-    <div class="card">CSS</div>
-    <div class="card">JavaScript</div>
-    <div class="card">Forex Trading</div>
-    <div class="card">Graphic Design</div>
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>Forex Trading Analysis</li>
+      <li>JavaScript (Learning)</li>
+      <li>Graphic Design</li>
+    </ul>
+  <section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="project">
+    <h3>Personal Portfolio Website</h3>
+    <p>A modern personal portfolio built using HTML and CSS.</p>
+  </div>
+
+  <div class="project">
+    <h3>Business Landing Page</h3>
+    <p>A clean landing page designed for small businesses.</p>
+  </div>
+
+  <div class="project">
+    <h3>Forex Analysis Dashboard (Concept)</h3>
+    <p>A simple UI design showing forex trends and analysis.</p>
+  </div>
+
+</section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: owenkydavis89@email.com</p>
+    <p>Phone: +254783228345</p>
+    <p>Location: Nairobi, Kenya</p>
   </section>
 
-  <section>
-    <h1>Contact Me</h1>
-    <button onclick="contactMe()">0116827912</button>
-  </section>
-
-  <script>
-    function contactMe() {
-      alert("Email me at: owenkydavis89@gmail.com");
-    }
-  </script>
+  <footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
